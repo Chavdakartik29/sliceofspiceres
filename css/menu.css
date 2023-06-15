@@ -1,0 +1,94 @@
+.text-justify {
+    text-align: justify;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* header  */
+
+.view-btn {
+    --bs-btn-hover-bg: #CC9933;
+    --bs-btn-bg: #CC9933;
+}
+
+/* banner  */
+.banner {
+    height: 502px;
+    background-image: url(../images/chicken-skewers-with-slices-sweet-peppers-dill\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 1684px;
+}
+
+.banner .content h1 {
+    top: 216px;
+    font-size: 50px;
+    --bs-warning-rgb: 204, 153, 51;
+}
+
+.banner .content p {
+    top: 415px;
+}
+
+.banner .content a {
+    top: 528px;
+}
+
+/* our menu  */
+.our-menu {
+    top: 260px;
+}
+
+.our-menu .price {
+    --bs-warning-rgb: 204, 153, 51;
+}
+
+.our-menu .view {
+    --bs-warning-rgb: 204, 153, 51;
+}
+
+
+/* footer  */
+footer {
+    background-color: #16191E;
+    top: 360px;
+}
+
+footer .quick-lines {
+    margin-top: 90px;
+}
+
+footer .opening-hours {
+    margin-top: 90px;
+}
+
+footer .opening-hours h6 {
+    --bs-warning-rgb: 204, 153, 51;
+}
+
+footer .get-in-touch {
+    margin-top: 90px;
+}
+
+/* copyright  */
+.copyright {
+    top: 360px;
+    --bs-warning-rgb: 204, 153, 51;
+}
+
+.modal-image{
+    top: -33px;
+}
+
+.cart{
+    --bs-btn-bg: #CC9933;
+}
+
+.modal-dialog{
+    top: 25%;
+}

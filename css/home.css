@@ -1,0 +1,309 @@
+.text-justify {
+    text-align: justify;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* header  */
+
+.view-btn {
+    --bs-btn-hover-bg: #CC9933;
+    --bs-btn-bg: #CC9933;
+}
+
+/* banner  */
+.banner {
+    height: 826px;
+    background-image: url(../images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.banner .content h1 {
+    top: 216px;
+    font-size: 50px;
+    --bs-warning-rgb: 204, 153, 51;
+}
+
+.banner .content p {
+    top: 415px;
+}
+
+.banner .content a {
+    top: 528px;
+}
+
+/* about us  */
+.about-us {
+    top: 638px;
+}
+
+/* delivery  */
+.delivery {
+    background-color: #F7E9E4;
+    top: 750px;
+}
+
+.delivery .para {
+    text-align: center;
+}
+
+/* best for  */
+.best-for {
+    top: 850px;
+}
+
+.best-for .birth .image img {
+    width: 140px;
+}
+
+
+.best-for .meetings .image img {
+    width: 140px;
+}
+
+.best-for .weddings .image img {
+    width: 140px;
+}
+
+.best-for .b-content {
+    display: flex;
+}
+
+/* counter  */
+
+.counter {
+    top: 950px;
+    height: 544px;
+    background-image: url(../images/counter-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.counter .num h1 {
+    font-size: 89px;
+    color: #CC9933;
+}
+
+.counter .c-content {
+    display: flex;
+}
+
+/* slider  */
+.slider {
+    top: 1050px;
+}
+
+/* slign-up  */
+.sign-up {
+    background-image: url(../images/slign-up.png);
+    top: 1150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sign-up .form-control {
+    width: 474px;
+    height: 50px;
+}
+
+.sign-up .submit {
+    position: absolute;
+    left: 958px;
+    --bs-btn-bg: #CC9933;
+    height: 50px;
+}
+
+/* footer  */
+footer {
+    background-color: #16191E;
+    top: 1150px;
+}
+
+footer .quick-lines {
+    margin-top: 90px;
+}
+
+footer .opening-hours {
+    margin-top: 90px;
+}
+
+footer .opening-hours h6 {
+    --bs-warning-rgb: 204, 153, 51;
+}
+
+footer .get-in-touch {
+    margin-top: 90px;
+}
+
+footer .f-content {
+    display: flex;
+}
+
+/* copyright  */
+.copyright {
+    --bs-warning-rgb: 204, 153, 51;
+    top: 1150px;
+}
+
+.copyright .copy-content {
+    display: flex;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.carousel-control-next,
+.carousel-control-prev
+
+/*, .carousel-indicators */
+    {
+    filter: invert(50%);
+}
+
+@keyframes fadein {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    /* animation: fadein 2s infinite; */
+    animation: fadein 2s;
+
+}
+
+@media only screen and (max-width:320px) {
+
+    header nav {
+        display: none;
+    }
+
+    header .view {
+        display: none;
+    }
+
+    header .logo img {
+        width: 70px;
+    }
+
+    header .login a {
+        font-size: 10px;
+    }
+
+    header .row {
+        justify-content: space-between;
+    }
+
+    .banner .content h1 {
+        font-size: 30px;
+    }
+
+    .banner .content p {
+        display: none;
+    }
+
+    .about-us .image img {
+        width: 300px;
+    }
+
+    .delivery .content .para {
+        text-align: justify;
+    }
+
+
+    .best-for .b-content {
+        display: block;
+    }
+
+    .best-for .b-content .meetings {
+        margin-top: 30px;
+    }
+
+    .best-for .b-content .weddings {
+        margin-top: 30px;
+    }
+
+    .counter .c-content {
+        display: block;
+    }
+
+    .counter {
+        height: 690px;
+    }
+
+    .counter .c-content .customers {
+        margin: 0 auto;
+    }
+
+    .counter .c-content .dishes {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .counter .c-content .food {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .sign-up .form-control {
+        width: 260px;
+        height: 50px;
+    }
+
+    .sign-up .submit {
+        left: 158px;
+    }
+
+    footer .f-content {
+        display: block;
+    }
+
+    footer .f-content .spice {
+        text-align: center;
+    }
+
+    footer .f-content .spice p {
+        margin: 0 auto;
+    }
+
+    footer .opening-hours {
+        text-align: center;
+    }
+
+    footer .get-in-touch {
+        text-align: center;
+    }
+
+    footer .add {
+        justify-content: center;
+    }
+
+    footer .contact {
+        justify-content: center;
+    }
+
+    footer .email {
+        justify-content: center;
+    }
+
+    .copyright .copy-content {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+}

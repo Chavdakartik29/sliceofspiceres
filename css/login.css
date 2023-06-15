@@ -1,0 +1,13 @@
+.continue-btn {
+    --bs-btn-bg: #CC9933;
+    --bs-btn-hover-bg: #cda658;
+}
+
+.continue-google {
+    --bs-btn-bg: #4285F4;
+    --bs-btn-hover-bg: #649cf7;
+}
+
+.login-page {
+    transform: translateY(10%);
+}
