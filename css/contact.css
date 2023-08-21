@@ -9,10 +9,20 @@ ol {
 
 /* header  */
 
+
+header .view-login{
+    display: flex;
+}
+
 .view-btn {
     --bs-btn-hover-bg: #CC9933;
     --bs-btn-bg: #CC9933;
 }
+
+/* header {
+    margin-left: 48px;
+    margin-right: 48px;
+} */
 
 /* banner  */
 .banner {
@@ -54,9 +64,13 @@ ol {
     border-radius: 20px;
 }
 
+.contact-form .c-form {
+    width: 750px;
+}
+
 /* map  */
 
-.map{
+.map {
     top: 550px;
 }
 
@@ -82,8 +96,141 @@ footer .get-in-touch {
     margin-top: 90px;
 }
 
+
+footer .f-content {
+    display: flex;
+}
+
 /* copyright  */
 .copyright {
     --bs-warning-rgb: 204, 153, 51;
     top: 650px;
+}
+
+.copyright .copy-content {
+    display: flex;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+
+
+
+@media only screen and (max-width:320px) {
+
+    header .nav {
+        display: block;
+    }
+
+    header .view-login{
+        display: flex;
+    }
+
+    header .view a {
+        font-size: 10px;
+    }
+    header .logo img {
+        width: 70px;
+    }
+
+
+    header {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header .view-btn {
+        font-size: 10px;
+    }
+
+    header .row {
+        justify-content: center;
+    }
+
+    .banner {
+        width: 320px;
+    }
+
+
+    .banner .content h1 {
+        font-size: 30px;
+    }
+
+    .contact-form .content h1 {
+        font-size: 20px;
+    }
+
+    .contact-form .content p {
+        font-size: 14px;
+    }
+
+    .contact-form .c-form {
+        width: 295px;
+    }
+
+    footer .f-content {
+        display: block;
+    }
+
+    footer .f-content .spice {
+        text-align: center;
+    }
+
+    footer .f-content .spice p {
+        margin: 0 auto;
+    }
+
+    footer .opening-hours {
+        text-align: center;
+    }
+
+    footer .get-in-touch {
+        text-align: center;
+    }
+
+    footer .add {
+        justify-content: center;
+    }
+
+    footer .contact {
+        justify-content: center;
+    }
+
+    footer .email {
+        justify-content: center;
+    }
+
+    footer .spice p {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    footer .f-content .quick-lines h5 {
+        font-size: 17px;
+    }
+
+    footer .f-content .quick-lines {
+        font-size: 13px;
+    }
+
+    footer .f-content .spice .logo img {
+        width: 80px;
+    }
+
+    .copyright .copy-content {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .copyright .copy-content h5 {
+        font-size: 12px;
+    }
+
+    .copyright .icons ul {
+        justify-content: center;
+        padding: 0;
+    }
+
 }

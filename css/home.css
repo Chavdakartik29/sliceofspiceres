@@ -9,6 +9,11 @@ ol {
 
 /* header  */
 
+
+header .view-login{
+    display: flex;
+}
+
 .view-btn {
     --bs-btn-hover-bg: #CC9933;
     --bs-btn-bg: #CC9933;
@@ -186,16 +191,20 @@ h1 {
 
 @media only screen and (max-width:320px) {
 
-    header nav {
-        display: none;
+    header .nav {
+        display: block;
     }
 
-    header .view {
-        display: none;
+    header .view-login{
+        display: flex;
     }
 
     header .logo img {
         width: 70px;
+    }
+
+    header .view a {
+        font-size: 10px;
     }
 
     header .login a {
@@ -231,16 +240,33 @@ h1 {
         margin-top: 30px;
     }
 
+    .best-for .b-content h5{
+        font-size: 17px;
+    }
+
+    .best-for .b-content .para{
+        font-size: 14px;
+        text-align: justify;
+    }
+
     .best-for .b-content .weddings {
         margin-top: 30px;
     }
 
-    .counter .c-content {
-        display: block;
+    .best-for .birth .image img{
+        width: 120px;
     }
 
-    .counter {
-        height: 690px;
+    .best-for .meetings .image img{
+        width: 120px;
+    }
+
+    .best-for .weddings .image img {
+        width: 120px;
+    }
+
+    .counter .c-content {
+        display: block;
     }
 
     .counter .c-content .customers {
@@ -257,13 +283,33 @@ h1 {
         margin-top: 20px;
     }
 
+    .counter .num h1 {
+        font-size: 30px;
+    }
+
+    .counter .c-content h2{
+        font-size: 16px;
+    }
+
+    .sign-up .row{
+        justify-content: center;
+    }
+
     .sign-up .form-control {
         width: 260px;
         height: 50px;
     }
 
     .sign-up .submit {
-        left: 158px;
+        left: 166px;
+    }
+
+    .sign-up .form-control{
+        height: 45px;
+    }
+
+    .sign-up .submit{
+        height: 45px;
     }
 
     footer .f-content {
@@ -298,12 +344,38 @@ h1 {
         justify-content: center;
     }
 
+    footer .spice p{
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    footer .f-content .quick-lines h5{
+        font-size: 17px;
+    }
+
+    footer .f-content .quick-lines{
+        font-size: 13px;
+    }
+
+    footer .f-content .spice .logo img{
+        width: 80px;
+    }
+
     .copyright .copy-content {
         display: block;
         margin-left: 0;
         margin-right: 0;
-        font-size: 12px;
         text-align: center;
     }
 
+    .copyright .copy-content h5{
+        font-size: 12px;
+    }
+
+    .copyright .icons ul{
+        justify-content: center;
+        padding: 0;
+    }
+
+  
 }

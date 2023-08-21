@@ -14,6 +14,10 @@ ol {
     --bs-btn-bg: #CC9933;
 }
 
+header .view-login{
+    display: flex;
+}
+
 
 /* banner  */
 .banner {
@@ -50,16 +54,45 @@ ol {
     text-align: justify;
 }
 
+.about-us .content{
+    display: flex;
+}
+
 /* variety  */
 
 .variety{
     top: 570px ;
 }
 
+.variety .content{
+    display: flex;
+}
+
+.variety .content .delivery-content{
+    margin-right: 24px;
+}
+
+.variety .content .time-content{
+    margin-right: 24px;
+}
+
+.variety .content .discounts-content{
+    margin-right: 24px;
+}
+
+.variety .content .food-content{
+    margin-right: 24px;
+}
+
+
 /* our-team  */
 .our-team{
     top: 670px;
     background-color: #FFEECB;
+}
+
+.our-team .image-content{
+    display: flex;
 }
 
 /* footer  */
@@ -80,9 +113,184 @@ footer .get-in-touch{
     margin-top: 90px;   
 }
 
+
+footer .f-content {
+    display: flex;
+}
+
+
 /* copyright  */
 .copyright{
     --bs-warning-rgb: 204, 153, 51;                                                                             
     top: 770px;
 }
 
+.copyright .copy-content {
+    display: flex;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+
+@media only screen and (max-width:320px) {
+
+
+    
+    header .nav {
+        display: block;
+    }
+
+    header .view-login{
+        display: flex;
+    }
+
+    header .view a {
+        font-size: 10px;
+    }
+
+    header .logo img {
+        width: 70px;
+    }
+
+
+    header .login a {
+        font-size: 10px;
+    }
+
+    header .row {
+        justify-content: space-between;
+    }
+
+    .banner{
+        width: 320px;
+    }
+
+    .banner .content h1 {
+        font-size: 30px;
+    }
+
+    .about-us .content{
+        display: block;
+    }
+
+    .about-us .content .image img{
+        width: 300px;
+    }
+
+    .variety .content{
+        display: block;
+    }
+
+    .variety .content .delivery-content{
+        margin-top: 20px;
+    }
+
+    .variety .content .time-content{
+        margin-top: 20px;
+    }
+
+    .variety .content .discounts-content{
+        margin-top: 20px;
+    }
+
+    .variety .content .food-content{
+        margin-top: 20px;
+    }
+
+    .variety .content .delivery-content{
+        margin-right: 0px;
+    }
+    
+    .variety .content .time-content{
+        margin-right: 0px;
+    }
+    
+    .variety .content .discounts-content{
+        margin-right: 0px;
+    }
+    
+    .variety .content .food-content{
+        margin-right: 0px;
+    }
+
+    .our-team .image-content{
+        display: block;
+    }
+
+    .our-team .image-content .boy img{
+        width: 230px;
+    }
+
+    .our-team .image-content .girl img{
+        width: 230px;
+    }
+
+    .our-team .image-content .girl{
+        margin-top: 20px;
+    }
+
+    footer .f-content {
+        display: block;
+    }
+
+    footer .f-content .spice {
+        text-align: center;
+    }
+
+    footer .f-content .spice p {
+        margin: 0 auto;
+    }
+
+    footer .opening-hours {
+        text-align: center;
+    }
+
+    footer .get-in-touch {
+        text-align: center;
+    }
+
+    footer .add {
+        justify-content: center;
+    }
+
+    footer .contact {
+        justify-content: center;
+    }
+
+    footer .email {
+        justify-content: center;
+    }
+
+    footer .spice p{
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    footer .f-content .quick-lines h5{
+        font-size: 17px;
+    }
+
+    footer .f-content .quick-lines{
+        font-size: 13px;
+    }
+
+    footer .f-content .spice .logo img{
+        width: 80px;
+    }
+
+    .copyright .copy-content {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .copyright .copy-content h5{
+        font-size: 12px;
+    }
+
+    .copyright .icons ul{
+        justify-content: center;
+        padding: 0;
+    }
+}

@@ -1,3 +1,11 @@
+.login-page .content .image {
+    height: 665px;
+    background-image: url(../images/login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .continue-btn {
     --bs-btn-bg: #CC9933;
     --bs-btn-hover-bg: #cda658;
@@ -10,4 +18,21 @@
 
 .login-page {
     transform: translateY(10%);
+}
+
+
+
+@media only screen and (max-width:320px) {
+
+    .login-page .content .image {
+        background-image: none;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+    .login-page .content{
+        --bs-border-width: 0px;
+    }
 }

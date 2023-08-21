@@ -9,6 +9,10 @@ ol {
 
 /* header  */
 
+header .view-login{
+    display: flex;
+}
+
 .view-btn {
     --bs-btn-hover-bg: #CC9933;
     --bs-btn-bg: #CC9933;

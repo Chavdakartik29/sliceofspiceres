@@ -44,38 +44,53 @@
 
     
     <header class="z-3 position-relative">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="logo col-5 pt-3">
-                    <img src="images/logo.png" alt="logo">
-                </div>
-                <nav class="col-5">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="home.html" class="nav-link text-white">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white">MENU</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="gallery.html" class="nav-link text-white">GALLERY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="about-us.html" class="nav-link text-white">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link text-white">CONTACT US</a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg bg-dark" style="--bs-bg-opacity: .3;">
+                    <div class="container-fluid">
+                        <div class="logo col-5 col-xxl-5">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="text-white fs-2"><i class="bi bi-list"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="home.html" class="nav-link text-white">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="menu.html" class="nav-link text-white">MENU</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="gallery.html" class="nav-link text-white">GALLERY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about-us.html" class="nav-link text-white">ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-white">CONTACT US</a>
+                                </li>
+                            </ul>
+                            <div class="view-login">
+                                <div class="col-5 col-xxl-9 col-xxl-2 view">
+                                    <a href="javascript:;"
+                                        class="view-btn btn btn-warning rounded-0 border-0 text-white">View Cart
+                                        <i class="bi bi-bag ms-2 me-2"></i>
+                                        <span>2</span>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-xxl-1 login">
+                                    <a href="login.html"
+                                        class="view-btn btn btn-warning rounded-0 border-0 text-white">Login
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
-                <div class="col-2">
-                    <a href="#" class="view-btn btn btn-warning rounded-0 border-0 text-white" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        View Cart
-                        <i class="bi bi-bag ms-2 me-2"></i>
-                        <span>2</span>
-                    </a>
-                </div>
             </div>
         </div>
     </header>
@@ -84,7 +99,7 @@
 
         <!-- banner -->
         <section class="banner position-absolute">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
 
                 </div>
@@ -94,15 +109,15 @@
         <!-- our menu  -->
         <section class="our-menu position-relative">
             <div class="container">
-                <div class="row bg-white shadow">
+                <div class="row bg-white shadow m-auto">
                     <div class="content pt-5">
                         <h1 class="text-center text-black display-4 fw-bold">OUR MENU</h1>
                         <h3 class="text-center mt-4 mb-4">BURGERS</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="d-flex justify-content-center mt-5">
-                        <div class="me-4">
+                    <div class="card-content justify-content-center mt-5">
+                        <div class="me-4 veggie">
                             <div class="card col-4 border-0 shadow" style="width: 18rem;">
                                 <img src="images/veggie-burger.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -115,7 +130,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="me-4">
+                        <div class="me-4 veggie2">
                             <div class="card col-4  border-0 shadow" style="width: 18rem;">
                                 <img src="images/veggie-burger.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -128,7 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="me-4">
+                        <div class="me-4 veggie3">
                             <div class="card col-4  border-0 shadow" style="width: 18rem;">
                                 <img src="images/veggie-burger.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -151,9 +166,9 @@
                     <div class="content pt-5">
                         <h3 class="text-center text-black fw-bold">PIZZAS</h3>
                     </div>
-                    <div class="d-flex justify-content-center mt-5">
+                    <div class="pizza-content justify-content-center mt-5">
                         <div class="me-4">
-                            <div class="card col-4  border-0 shadow" style="width: 18rem;">
+                            <div class="card col-4 pizza1 shadow" style="width: 18rem;">
                                 <img src="images/pizza-1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Neapolitan Pizza</h5>
@@ -166,7 +181,7 @@
                             </div>
                         </div>
                         <div class="me-4">
-                            <div class="card col-4  border-0 shadow" style="width: 18rem;">
+                            <div class="card col-4 pizza2 border-0 shadow" style="width: 18rem;">
                                 <img src="images/pizza-2.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Chicago Pizza</h5>
@@ -179,7 +194,7 @@
                             </div>
                         </div>
                         <div class="me-4">
-                            <div class="card col-4 border-0 shadow" style="width: 18rem;">
+                            <div class="card col-4 pizza3 border-0 shadow" style="width: 18rem;">
                                 <img src="images/pizza-3.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Detroit Pizza</h5>
@@ -201,9 +216,9 @@
                     <div class="content pt-5">
                         <h3 class="text-center text-black fw-bold">SANDWICHES</h3>
                     </div>
-                    <div class="d-flex justify-content-center mt-5">
+                    <div class="sand-content justify-content-center mt-5">
                         <div class="me-4">
-                            <div class="card col-4  border-0 shadow" style="width: 18rem;">
+                            <div class="card col-4 sand1 border-0 shadow" style="width: 18rem;">
                                 <img src="images/sand-1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Neapolitan Pizza</h5>
@@ -216,7 +231,7 @@
                             </div>
                         </div>
                         <div class="me-4">
-                            <div class="card col-4  border-0 shadow" style="width: 18rem;">
+                            <div class="card col-4 sand2 border-0 shadow" style="width: 18rem;">
                                 <img src="images/sand-2.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Chicago Pizza</h5>
@@ -229,7 +244,7 @@
                             </div>
                         </div>
                         <div class="me-4">
-                            <div class="card col-4 border-0 shadow" style="width: 18rem;">
+                            <div class="card col-4 sand3 shadow" style="width: 18rem;">
                                 <img src="images/sand-3.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Detroit Pizza</h5>
@@ -251,69 +266,74 @@
 
         <!-- footer  -->
 
-        <footer class="position-relative">
-            <div class="container">
+        <footer class="position-relative overflow-hidden">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="content d-flex mt-5 mb-5">
-                        <div class="spice col-3 text-white">
-                            <div class="logo">
-                                <img src="images/logo.png" alt="">
-                            </div>
-                            <h5 class="mb-3 mt-3">why slice of spice?</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
-                                est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-                                sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit
-                            </p>
-                        </div>
-                        <div class="quick-lines col-3 ms-3 text-white">
-                            <h5>QUICK LINES</h5>
-                            <ul class="p-0 mt-3">
-                                <li class="mb-2">
-                                    <i class="bi bi-arrow-right-short"></i><a href="javascript:;"
-                                        class="text-decoration-none text-white">HOME</a>
-                                </li>
-                                <li class="mb-2">
-                                    <i class="bi bi-arrow-right-short"></i> <a href="javascript:;"
-                                        class="text-decoration-none text-white">MENU</a>
-                                </li>
-                                <li class="mb-2">
-                                    <i class="bi bi-arrow-right-short"></i><a href="javascript:;"
-                                        class="text-decoration-none text-white">GALLERY</a>
-                                </li>
-                                <li class="mb-2">
-                                    <i class="bi bi-arrow-right-short"></i><a href="javascript:;"
-                                        class="text-decoration-none text-white">ABOUT US</a>
-                                </li>
-                                <li class="mb-2">
-                                    <i class="bi bi-arrow-right-short"></i> <a href="javascript:;"
-                                        class="text-decoration-none text-white">CONTACT US</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="opening-hours col-3 text-white">
-                            <h5>OPENING HOURS</h5>
-                            <div class="date-time mt-3">
-                                <span>Monday - Saturday</span>
-                                <h6 class="text-warning">12:00PM - 10:30PM</h6>
-                                <span>Sunday</span>
-                                <h6 class="text-warning">12:00PM - 11:30PM</h6>
-                            </div>
-                        </div>
-                        <div class="get-in-touch col-3 text-white">
-                            <h5>GET IN TOUCH</h5>
-                            <div class="mt-3">
-                                <p>Restaurant, to consequat ipsum nec sagittis sem</p>
-                                <div class="add d-flex">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <p class="ms-2">Restaurant, Manhattan 1258,New York, USA Lahore</p>
+                    <div class="content mt-5 mb-5">
+                        <div class="f-content mx-5 justify-content-center">
+                            <div class="spice col-12 col-xxl-4 text-white">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="">
                                 </div>
-                                <div class="contact d-flex">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <p class="ms-2">(+1) 234 567 8901</p>
+                                <h5 class="mb-3 mt-3">why slice of spice?</h5>
+                                <p class="col-12 col-xxl-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis molestie,
+                                    dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+                                    sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum
+                                    velit
+                                </p>
+                            </div>
+                            <div class="quick-lines col-12 col-xxl-2 ms-5 text-white">
+                                <h5>QUICK LINES</h5>
+                                <ul class="p-0 mt-3">
+                                    <li class="mb-2">
+                                        <i class="bi bi-arrow-right-short"></i><a href="javascript:;"
+                                            class="text-decoration-none text-white">HOME</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-arrow-right-short"></i> <a href="javascript:;"
+                                            class="text-decoration-none text-white">MENU</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-arrow-right-short"></i><a href="javascript:;"
+                                            class="text-decoration-none text-white">GALLERY</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-arrow-right-short"></i><a href="javascript:;"
+                                            class="text-decoration-none text-white">ABOUT US</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-arrow-right-short"></i> <a href="javascript:;"
+                                            class="text-decoration-none text-white">CONTACT US</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="opening-hours col-12 col-xxl-2 text-white">
+                                <h5>OPENING HOURS</h5>
+                                <div class="date-time mt-3">
+                                    <span>Monday - Saturday</span>
+                                    <h6 class="text-warning">12:00PM - 10:30PM</h6>
+                                    <span>Sunday</span>
+                                    <h6 class="text-warning">12:00PM - 11:30PM</h6>
                                 </div>
-                                <div class="email d-flex">
-                                    <i class="bi bi-envelope-fill"></i>
-                                    <p class="ms-2">hello@website.com</p>
+                            </div>
+                            <div class="get-in-touch col-12 col-xxl-2 text-white">
+                                <h5>GET IN TOUCH</h5>
+                                <div class="mt-3">
+                                    <p>Restaurant, to consequat ipsum nec sagittis sem</p>
+                                    <div class="add d-flex">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <p class="ms-2">Restaurant, Manhattan 1258,New York, USA Lahore</p>
+                                    </div>
+                                    <div class="contact d-flex">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <p class="ms-2">(+1) 234 567 8901</p>
+                                    </div>
+                                    <div class="email d-flex">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <p class="ms-2">hello@website.com</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -325,24 +345,28 @@
         <!-- copyright  -->
 
         <section class="copyright position-relative bg-warning">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="content d-flex justify-content-between align-items-center">
-                        <div class="py-3">
-                            <h5>Copyright © 2016 slice of spice. All Right Reserved</h5>
-                        </div>
-                        <div class="icons">
-                            <ul class="d-flex mb-0">
-                                <li class="p-2 facebook">
-                                    <a href="#"><i class="bi bi-facebook text-white fs-4"></i></a>
-                                </li>
-                                <li class="p-2 twitter">
-                                    <a href="#"><i class="bi bi-twitter text-white fs-4"></i></a>
-                                </li>
-                                <li class="p-2 google">
-                                    <a href="#"><i class="bi bi-google text-white fs-4"></i></a>
-                                </li>
-                            </ul>
+                    <div class="content">
+                        <div class="copy-content justify-content-between align-items-center">
+                            <div class="py-3">
+                                <h5>Copyright © 2016 slice of spice. All Right Reserved</h5>
+                            </div>
+                            <div class="icons">
+                                <ul class="d-flex mb-0">
+                                    <li class="p-2 facebook">
+                                        <a href="javascript:;">
+                                            <i class="bi bi-facebook text-dark fs-4"></i>
+                                        </a>
+                                    </li>
+                                    <li class="p-2 twitter">
+                                        <a href="javascript:;"><i class="bi bi-twitter text-dark fs-4"></i></a>
+                                    </li>
+                                    <li class="p-2 google">
+                                        <a href="javascript:;"><i class="bi bi-google text-dark fs-4"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

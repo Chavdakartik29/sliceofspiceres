@@ -9,6 +9,16 @@ ol {
 
 /* header  */
 
+/* header {
+    margin-left: 48px;
+    margin-right: 48px;
+} */
+
+
+header .view-login{
+    display: flex;
+}
+
 .view-btn {
     --bs-btn-hover-bg: #CC9933;
     --bs-btn-bg: #CC9933;
@@ -52,6 +62,21 @@ ol {
     --bs-warning-rgb: 204, 153, 51;
 }
 
+.our-menu .row {
+    width: 1320px;
+}
+
+.our-menu .card-content {
+    display: flex;
+}
+
+.our-menu .pizza-content {
+    display: flex;
+}
+
+.our-menu .sand-content{
+    display: flex;
+}
 
 /* footer  */
 footer {
@@ -75,20 +100,176 @@ footer .get-in-touch {
     margin-top: 90px;
 }
 
+
+footer .f-content {
+    display: flex;
+}
+
 /* copyright  */
 .copyright {
     top: 360px;
     --bs-warning-rgb: 204, 153, 51;
 }
 
-.modal-image{
+.copyright .copy-content {
+    display: flex;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.modal-image {
     top: -33px;
 }
 
-.cart{
+.cart {
     --bs-btn-bg: #CC9933;
 }
 
-.modal-dialog{
+.modal-dialog {
     top: 25%;
+}
+
+@media only screen and (max-width:320px) {
+
+
+    header .nav {
+        display: block;
+    }
+
+    header .view-login{
+        display: flex;
+    }
+
+    header .view a {
+        font-size: 10px;
+    }
+
+
+    header .logo img {
+        width: 70px;
+    }
+
+
+    header {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header .view-btn {
+        font-size: 10px;
+    }
+
+    header .row {
+        justify-content: center;
+    }
+
+    .banner {
+        width: 320px;
+    }
+
+    .our-menu .row {
+        width: 290px;
+    }
+
+    .our-menu .card-content {
+        display: block;
+    }
+
+    .our-menu .card-content .veggie2 {
+        margin-top: 20px;
+    }
+
+    .our-menu .card-content .veggie3 {
+        margin-top: 20px;
+    }
+
+    .our-menu .pizza-content {
+        display: block;
+    }
+
+    .our-menu .pizza-content .pizza2 {
+        margin-top: 20px;
+    }
+
+    .our-menu .pizza-content .pizza3 {
+        margin-top: 20px;
+    }
+
+    .our-menu .sand-content{
+        display: block;
+    }
+
+    .our-menu .sand-content .sand2 {
+        margin-top: 20px;
+    }
+
+    .our-menu .sand-content .sand3 {
+        margin-top: 20px;
+    }
+
+    footer .f-content {
+        display: block;
+    }
+
+    footer .f-content .spice {
+        text-align: center;
+    }
+
+    footer .f-content .spice p {
+        margin: 0 auto;
+    }
+
+    footer .opening-hours {
+        text-align: center;
+    }
+
+    footer .get-in-touch {
+        text-align: center;
+    }
+
+    footer .add {
+        justify-content: center;
+    }
+
+    footer .contact {
+        justify-content: center;
+    }
+
+    footer .email {
+        justify-content: center;
+    }
+
+    footer .spice p{
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    footer .f-content .quick-lines h5{
+        font-size: 17px;
+    }
+
+    footer .f-content .quick-lines{
+        font-size: 13px;
+    }
+
+    footer .f-content .spice .logo img{
+        width: 80px;
+    }
+
+    .copyright .copy-content {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .copyright .copy-content h5{
+        font-size: 12px;
+    }
+
+    .copyright .icons ul{
+        justify-content: center;
+        padding: 0;
+    }
+
 }
